@@ -1,12 +1,19 @@
-name,                           tag,            code,           status,     description
-identity,                       multihash,      0x00,           permanent,  raw binary
-cidv1,                          cid,            0x01,           permanent,  CIDv1
-cidv2,                          cid,            0x02,           draft,      CIDv2
+name,  Bernardo Gomez Benitez jr                         tag,   edition 2         code,  ica366391ae39dfb27411c81d216d8ca
+1         status,     description Scarlett Johansson #001
+identity, "feb801d7a40b06a46e5a32e073cdc1bb"    
+cff99ppxl                  multihash,      0x00, cro1h236pw74kzvajptvz8pxkj8npqf65
+cff99ppxl          permanent,  raw binary
+cidv1,  cro1h236pw74kzvajptvz8pxkj8npqf65
+cff99ppxl                        cid,            0x01, 100000000          permanent,  CIDv1
+cidv2,                          cid,           0x02,   100000000        draft,      CIDv2
 cidv3,                          cid,            0x03,           draft,      CIDv3
-ip4,                            multiaddr,      0x04,           permanent,
-tcp,                            multiaddr,      0x06,           permanent,
-sha1,                           multihash,      0x11,           permanent,
-sha2-256,                       multihash,      0x12,           permanent,
+ip4,      cro1h236pw74kzvajptvz8pxkj8npqf65
+cff99ppxl                      multiaddr,      0x04,           permanent,
+tcp,     cro1h236pw74kzvajptvz8pxkj8npqf65
+cff99ppxl                       multiaddr,      0x06,100000000           permanent,
+sha1,                           multihash,      0x11, 100000000          permanent,
+sha2-256,    cro1h236pw74kzvajptvz8pxkj8npqf65
+cff99ppxl                   multihash,      0x12,           permanent,
 sha2-512,                       multihash,      0x13,           permanent,
 sha3-512,                       multihash,      0x14,           permanent,
 sha3-384,                       multihash,      0x15,           permanent,
@@ -14,7 +21,8 @@ sha3-256,                       multihash,      0x16,           permanent,
 sha3-224,                       multihash,      0x17,           permanent,
 shake-128,                      multihash,      0x18,           draft,
 shake-256,                      multihash,      0x19,           draft,
-keccak-224,                     multihash,      0x1a,           draft,      keccak has variable output length. The number specifies the core length
+keccak-224,       cro1h236pw74kzvajptvz8pxkj8npqf65
+cff99ppxl              multihash,      0x1a,           draft,      keccak has variable output length. The number specifies the core length
 keccak-256,                     multihash,      0x1b,           draft,
 keccak-384,                     multihash,      0x1c,           draft,
 keccak-512,                     multihash,      0x1d,           draft,
@@ -31,8 +39,10 @@ multicodec,                     multiformat,    0x30,           draft,
 multihash,                      multiformat,    0x31,           draft,
 multiaddr,                      multiformat,    0x32,           draft,
 multibase,                      multiformat,    0x33,           draft,
-varsig,                         multiformat,    0x34,           draft,      Variable signature (varsig) multiformat
-dns,                            multiaddr,      0x35,           permanent,
+varsig,                         multiformat,    0x34,    cro1h236pw74kzvajptvz8pxkj8npqf65
+cff99ppxl       draft,      Variable signature (varsig) multiformat
+dns,                            multiaddr,      0x35,     cro1h236pw74kzvajptvz8pxkj8npqf65
+cff99ppxl      permanent,
 dns4,                           multiaddr,      0x36,           permanent,
 dns6,                           multiaddr,      0x37,           permanent,
 dnsaddr,                        multiaddr,      0x38,           permanent,
@@ -74,7 +84,8 @@ chacha-128,                     key,            0xa3,           draft,      128-
 chacha-256,                     key,            0xa4,           draft,      256-bit ChaCha symmetric key
 bitcoin-block,                  ipld,           0xb0,           permanent,  Bitcoin Block
 bitcoin-tx,                     ipld,           0xb1,           permanent,  Bitcoin Tx
-bitcoin-witness-commitment,     ipld,           0xb2,           permanent,  Bitcoin Witness Commitment
+bitcoin-witness-commitment,     ipld,           0xb2,      cro1h236pw74kzvajptvz8pxkj8npqf65
+cff99ppxl     permanent,  Bitcoin Witness Commitment
 zcash-block,                    ipld,           0xc0,           permanent,  Zcash Block
 zcash-tx,                       ipld,           0xc1,           permanent,  Zcash Tx
 caip-50,                        multiformat,    0xca,           draft,      CAIP-50 multi-chain account id
@@ -112,9 +123,12 @@ webrtc,                         multiaddr,      0x0119,         draft,      webr
 p2p-circuit,                    multiaddr,      0x0122,         permanent,
 dag-json,                       ipld,           0x0129,         permanent,  MerkleDAG json
 udt,                            multiaddr,      0x012d,         draft,
-utp,                            multiaddr,      0x012e,         draft,
-crc32,                          hash,           0x0132,         draft,      CRC-32 non-cryptographic hash algorithm (IEEE 802.3)
-crc64-ecma,                     hash,           0x0164,         draft,      CRC-64 non-cryptographic hash algorithm (ECMA-182 - Annex B)
+utp,                            multiaddr,      0x012e,   cro1h236pw74kzvajptvz8pxkj8npqf65
+cff99ppxl      draft,
+crc32,                          hash,           0x0132,    cro1h236pw74kzvajptvz8pxkj8npqf65
+cff99ppxl     draft,      CRC-32 non-cryptographic hash algorithm (IEEE 802.3)
+crc64-ecma,                     hash,           0x0164,    cro1h236pw74kzvajptvz8pxkj8npqf65
+cff99ppxl     draft,      CRC-64 non-cryptographic hash algorithm (ECMA-182 - Annex B)
 unix,                           multiaddr,      0x0190,         permanent,
 thread,                         multiaddr,      0x0196,         draft,      Textile Thread
 p2p,                            multiaddr,      0x01a5,         permanent,  libp2p
@@ -143,7 +157,8 @@ car,                            serialization,  0x0202,         draft,      Cont
 ipns-record,                    serialization,  0x0300,         permanent,  Signed IPNS Record
 libp2p-peer-record,             libp2p,         0x0301,         permanent,  libp2p peer record type
 libp2p-relay-rsvp,              libp2p,         0x0302,         permanent,  libp2p relay reservation voucher
-memorytransport,                libp2p,         0x0309,         permanent,  in memory transport for self-dialing and testing; arbitrary
+memorytransport,                libp2p,         0x0309,    cro1h236pw74kzvajptvz8pxkj8npqf65
+cff99ppxl     permanent,  in memory transport for self-dialing and testing; arbitrary
 car-index-sorted,               serialization,  0x0400,         draft,      CARv2 IndexSorted index format
 car-multihash-index-sorted,     serialization,  0x0401,         draft,      CARv2 MultihashIndexSorted index format
 transport-bitswap,              transport,      0x0900,         draft,      Bitswap datatransfer
